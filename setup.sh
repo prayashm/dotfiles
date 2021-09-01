@@ -1,6 +1,8 @@
 ## add bits needed for GitHub CLI
 apt-key adv --keyserver keyserver.ubuntu.com --recv-key C99B11DEB97541F0
 apt-add-repository https://cli.github.com/packages
+add-apt-repository ppa:lazygit-team/release
+
 
 ## update and install some things we should probably have
 apt-get update
@@ -11,6 +13,7 @@ apt-get install -y \
   gnupg2 \
   jq \
   sudo \
+  lazygit \
   zsh
 
 ## setup and install oh-my-zsh
